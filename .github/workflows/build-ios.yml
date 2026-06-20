@@ -1,2 +1,21 @@
-- name: iOS Build Action
-  uses: yukiarrr/ios-build-action@v1.9.1
+name: "Build iOS IPA"
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Certificate & Profile
+        run: |
+          # Import certs/profiles from secrets... (simplified for brevity)
+          echo "Installing signing assets..."
+      - name: Build and Export
+        run: |
+          xcodebuild archive -workspace YourProject.xcworkspace -scheme YourScheme -archivePath build/App.xcarchive
+          xcodebuild -exportArchive -archivePath build/App.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: iOS-App-IPA
+          path: build/*.ipa
