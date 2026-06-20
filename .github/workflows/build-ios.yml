@@ -1,21 +1,70 @@
-name: "Build iOS IPA"
+name: Build iOS IPA
+
 on:
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+
 jobs:
   build:
+    name: Build and Sign IPA
     runs-on: macos-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Setup Certificate & Profile
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install the Apple certificate and provisioning profile
+        env:
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          BUILD_PROVISIONING_PROFILE_BASE64: ${{ secrets.BUILD_PROVISIONING_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
-          # Import certs/profiles from secrets... (simplified for brevity)
-          echo "Installing signing assets..."
-      - name: Build and Export
+          # Create variables
+          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+          PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
+          KEYCHAIN_PATH=$RUNNER_TEMP/app-build.keychain-db
+
+          # Import certificate and provisioning profile from secrets
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o $CERTIFICATE_PATH
+          echo -n "$BUILD_PROVISIONING_PROFILE_BASE64" | base64 --decode -o $PP_PATH
+
+          # Create temporary keychain
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security default-keychain -s $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security list-keychains -d user -s $KEYCHAIN_PATH
+
+          # Import certificate to keychain
+          security import $CERTIFICATE_PATH -k $KEYCHAIN_PATH -P "$P12_PASSWORD" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+
+          # Apply provisioning profile
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles/
+
+      - name: Build Xcode Archive
         run: |
-          xcodebuild archive -workspace YourProject.xcworkspace -scheme YourScheme -archivePath build/App.xcarchive
-          xcodebuild -exportArchive -archivePath build/App.xcarchive -exportOptionsPlist ExportOptions.plist -exportPath build
-      - uses: actions/upload-artifact@v4
+          xcodebuild archive \
+            -workspace ios/Gemini.xcworkspace \
+            -scheme Gemini \
+            -configuration Release \
+            -archivePath $RUNNER_TEMP/Gemini.xcarchive \
+            allowProvisioningUpdates=NO
+
+      - name: Export IPA file
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath $RUNNER_TEMP/Gemini.xcarchive \
+            -exportOptionsPlist ExportOptions.plist \
+            -exportPath $RUNNER_TEMP/build \
+            allowProvisioningUpdates=NO
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: iOS-App-IPA
-          path: build/*.ipa
+          name: iOS-IPA
+          path: ${{ framework.temp }}/build/*.ipa
+          retention-days: 7
