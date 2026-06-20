@@ -11,25 +11,26 @@ jobs:
 
       - name: build archive and ipaify
         run: |
-          xcodebuild archive -project CAPyTCHA.xcodeproj -scheme 'CAPyTCHA' -archivePath CAPyTCHA.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          # Updated project structure based on image.png
+          xcodebuild archive -workspace Gemini.xcworkspace -scheme 'Gemini' -archivePath Gemini.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
           mkdir Payload
-          mv CAPyTCHA.xcarchive/Products/Applications/CAPyTCHA.app Payload/CAPyTCHA.app
+          mv Gemini.xcarchive/Products/Applications/Gemini.app Payload/Gemini.app
 
           # Set display name to Gemini Web
           DISPLAY_NAME="Gemini Web"
-          if [ "$DISPLAY_NAME" != "CAPyTCHA" ] && [ -n "$DISPLAY_NAME" ]; then
-            /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $DISPLAY_NAME" "Payload/CAPyTCHA.app/Info.plist"
-            /usr/libexec/PlistBuddy -c "Set :CFBundleName $DISPLAY_NAME" "Payload/CAPyTCHA.app/Info.plist"
+          if [ "$DISPLAY_NAME" != "Gemini" ] && [ -n "$DISPLAY_NAME" ]; then
+            /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
+            /usr/libexec/PlistBuddy -c "Set :CFBundleName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
           fi
 
-          zip -r "CAPyTCHA.ipa" "Payload"
+          zip -r "Gemini Web.ipa" "Payload"
 
-          mv CAPyTCHA.ipa ${{ runner.temp }}/CAPyTCHA.ipa
+          mv "Gemini Web.ipa" "${{ runner.temp }}/Gemini Web.ipa"
 
       - name: Upload application
         uses: actions/upload-artifact@v4
         with:
-          name: CAPyTCHA
-          path: ${{ runner.temp }}/CAPyTCHA.ipa
+          name: GeminiWeb
+          path: ${{ runner.temp }}/Gemini Web.ipa
           retention-days: 3
