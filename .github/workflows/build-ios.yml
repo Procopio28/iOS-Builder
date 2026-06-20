@@ -11,33 +11,25 @@ jobs:
 
       - name: build archive and ipaify
         run: |
-          # Build the archive using your local repository files
-          xcodebuild archive \
-            -project Gemini.xcodeproj \
-            -scheme 'Gemini' \
-            -archivePath Gemini.xcarchive \
-            -configuration Release \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO
+          xcodebuild archive -project CAPyTCHA.xcodeproj -scheme 'CAPyTCHA' -archivePath CAPyTCHA.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 
-          # Create the Payload container
           mkdir Payload
-          mv Gemini.xcarchive/Products/Applications/Gemini.app Payload/Gemini.app
+          mv CAPyTCHA.xcarchive/Products/Applications/CAPyTCHA.app Payload/CAPyTCHA.app
 
-          # Set display name if needed
-          DISPLAY_NAME="Gemini"
-          if [ "$DISPLAY_NAME" != "Gemini" ] && [ -n "$DISPLAY_NAME" ]; then
-            /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
-            /usr/libexec/PlistBuddy -c "Set :CFBundleName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
+          # Set display name to Gemini Web
+          DISPLAY_NAME="Gemini Web"
+          if [ "$DISPLAY_NAME" != "CAPyTCHA" ] && [ -n "$DISPLAY_NAME" ]; then
+            /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $DISPLAY_NAME" "Payload/CAPyTCHA.app/Info.plist"
+            /usr/libexec/PlistBuddy -c "Set :CFBundleName $DISPLAY_NAME" "Payload/CAPyTCHA.app/Info.plist"
           fi
 
-          # Compress into an IPA file and move to temp directory
-          zip -r "Gemini.ipa" "Payload"
-          mv Gemini.ipa ${{ runner.temp }}/Gemini.ipa
+          zip -r "CAPyTCHA.ipa" "Payload"
+
+          mv CAPyTCHA.ipa ${{ runner.temp }}/CAPyTCHA.ipa
 
       - name: Upload application
         uses: actions/upload-artifact@v4
         with:
-          name: Gemini
-          path: ${{ runner.temp }}/Gemini.ipa
+          name: CAPyTCHA
+          path: ${{ runner.temp }}/CAPyTCHA.ipa
           retention-days: 3
