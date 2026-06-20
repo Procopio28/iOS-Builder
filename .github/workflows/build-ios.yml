@@ -9,10 +9,25 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4
 
+      # Step 1: Install node dependencies since package.json exists
+      - name: Install Node dependencies
+        run: |
+          if [ -f "package.json" ]; then
+            npm install
+          fi
+
+      # Step 2: Build and Archive with explicit signing bypass overrides
       - name: build archive and ipaify
         run: |
-          # Updated project structure based on image.png
-          xcodebuild archive -workspace Gemini.xcworkspace -scheme 'Gemini' -archivePath Gemini.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          xcodebuild archive \
+            -workspace Gemini.xcworkspace \
+            -scheme 'Gemini' \
+            -archivePath Gemini.xcarchive \
+            -configuration Release \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_ENTITLEMENTS=""
 
           mkdir Payload
           mv Gemini.xcarchive/Products/Applications/Gemini.app Payload/Gemini.app
@@ -25,7 +40,6 @@ jobs:
           fi
 
           zip -r "Gemini Web.ipa" "Payload"
-
           mv "Gemini Web.ipa" "${{ runner.temp }}/Gemini Web.ipa"
 
       - name: Upload application
