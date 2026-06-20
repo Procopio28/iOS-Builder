@@ -1,23 +1,31 @@
-name: "Build iOS app"
+name: iOS Unsigned IPA Builder
 
-on: [workflow_dispatch]
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
-  build_ios:
-    runs-on: macos-latest
+  build:
+    runs-on: macos-15-arm64
+
     steps:
-      - name: checkout repository
+      # 1. Checkout the source code from your repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # Step 1: Install node dependencies since package.json exists
-      - name: Install Node dependencies
-        run: |
-          if [ -f "package.json" ]; then
-            npm install
-          fi
+      # 2. Set up Node.js for your frontend/web assets build
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
 
-      # Step 2: Build and Archive with explicit signing bypass overrides
-      - name: build archive and ipaify
+      # 3. Install frontend web-side bundle assets
+      - name: Install NPM Dependencies
+        run: npm install
+
+      # 4. Compile and archive the iOS app using Xcode 16 (Bypassing Code Signing)
+      - name: Run xcodebuild Archive
         run: |
           xcodebuild archive \
             -workspace Gemini.xcworkspace \
@@ -29,22 +37,31 @@ jobs:
             CODE_SIGN_IDENTITY="" \
             CODE_SIGN_ENTITLEMENTS=""
 
-          mkdir Payload
-          mv Gemini.xcarchive/Products/Applications/Gemini.app Payload/Gemini.app
+      # 5. Create Payload folder and dynamically move the app bundle to prevent path mismatch errors
+      - name: Package into Unsigned IPA (Ipalify)
+        run: |
+          echo "Creating staging Payload directory..."
+          mkdir -p Payload
 
-          # Set display name to Gemini Web
-          DISPLAY_NAME="Gemini Web"
-          if [ "$DISPLAY_NAME" != "Gemini" ] && [ -n "$DISPLAY_NAME" ]; then
-            /usr/libexec/PlistBuddy -c "Set :CFBundleDisplayName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
-            /usr/libexec/PlistBuddy -c "Set :CFBundleName $DISPLAY_NAME" "Payload/Gemini.app/Info.plist"
+          echo "Searching for compiled .app bundle inside Gemini.xcarchive..."
+          APP_PATH=$(find Gemini.xcarchive -name "*.app" -type d | head -n 1)
+
+          if [ -n "$APP_PATH" ]; then
+            echo "Successfully found application bundle at: $APP_PATH"
+            # Copying the app directory recursively into Payload folder
+            cp -R "$APP_PATH" Payload/
+          else
+            echo "Error: Could not find any .app bundle inside Gemini.xcarchive. Build may have failed silently."
+            exit 1
           fi
 
-          zip -r "Gemini Web.ipa" "Payload"
-          mv "Gemini Web.ipa" "${{ runner.temp }}/Gemini Web.ipa"
+          echo "Packaging Payload folder into Gemini_Web.ipa..."
+          zip -r Gemini_Web.ipa Payload
 
-      - name: Upload application
+      # 6. Upload the generated .ipa installer package as a GitHub Actions workflow artifact
+      - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: GeminiWeb
-          path: ${{ runner.temp }}/Gemini Web.ipa
-          retention-days: 3
+          name: Gemini-Web-Unsigned-IPA
+          path: Gemini_Web.ipa
+          retention-days: 7
