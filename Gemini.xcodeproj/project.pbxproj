@@ -1,0 +1,1162 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01447C722BF9E18DFE01481C /* GoNativeJSBridgeLibrary.js in Resources */ = {isa = PBXBuildFile; fileRef = 80E0F882DC21BF93A873CC51 /* GoNativeJSBridgeLibrary.js */; };
+		051F923C74F909E227C663C9 /* localCache.zip in Resources */ = {isa = PBXBuildFile; fileRef = A360AA476B65B6EDEC168777 /* localCache.zip */; };
+		09A3759A8D54C51D66E0A77F /* LeanIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8EEF084669217DA9A282A2E /* LeanIOSTests.m */; };
+		0BC19AF129606067F70F4EF8 /* LEANLoadingSpinnerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5179DD692D2CC2369B00778 /* LEANLoadingSpinnerManager.m */; };
+		0C06366F0B9126B87DE05911 /* GNCustomHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D29DF94B113378C770E961 /* GNCustomHeaders.m */; };
+		0CA65E972A2EF950ADA6C539 /* LEANKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D419B9710A82F529869D1F79 /* LEANKeyboardManager.m */; };
+		11610EAC35D1EFC75F20060E /* appConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 519FBC486FBFEF0058EFE4CB /* appConfig.json */; };
+		1474956D4A7CD01A3CB454B6 /* MedianIcons in Frameworks */ = {isa = PBXBuildFile; productRef = 7B4CEAD71A493DCB634E702D /* MedianIcons */; };
+		1806C0338AD7501E39A87E43 /* LEANConfigUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 631F2FF32726142D5B3D8E49 /* LEANConfigUpdater.m */; };
+		1DEF569C99148F3053DE3E4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12E0DBF11B1C92BCC895271 /* CoreLocation.framework */; };
+		1F2556A822E89D7FDDF67214 /* WebViewViewportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA6A8B77C333F4A4CA4811 /* WebViewViewportManager.swift */; };
+		2041EAF80004C2796B452181 /* WindowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE54E43F1232FBD4A6153AB /* WindowsController.swift */; };
+		22E61857F90AD58EEA4E07E6 /* LEANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 36F991BEE421B7CFE185C46F /* LEANUtilities.m */; };
+		26948466B164CC84D491B823 /* LEANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CD950AEBD00E181ABF3CBB /* LEANAppDelegate.m */; };
+		27500BF5A0DB414B19F7A20A /* GNJSBridgeInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDBBDDBD36E787B4738DB3D /* GNJSBridgeInterface.m */; };
+		286A0C899A92415DC94D8585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270803A6A973CFC512CA5125 /* LaunchScreen.storyboard */; };
+		2896ECFA9FBF9443B7579F82 /* LEANToolbarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD3FC6DB8109E04F3D2A3FC /* LEANToolbarManager.m */; };
+		2C24B82444756435CB362D0C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75818AA7C2E2978DBF31D8CD /* Security.framework */; };
+		2FC4E20EF5050918D37FDD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C406FB40790EA2AE12F94F8E /* Assets.xcassets */; };
+		2FFAA880F782DB58E2D5F356 /* LEANWebViewIntercept.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D3FD8A6559320107B86396 /* LEANWebViewIntercept.m */; };
+		32B4E41BFCFDA4BE21148D41 /* BlobDownloader.js in Resources */ = {isa = PBXBuildFile; fileRef = 0FB66E79F8064EF7C3189896 /* BlobDownloader.js */; };
+		32B6CD254A14886FC24C4DCF /* AppIcon in Resources */ = {isa = PBXBuildFile; fileRef = DF762350D1057D8764FA0E06 /* AppIcon */; };
+		349EABF7FDCA865606001357 /* LEANLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C85E8D8FE0096DA2A0533396 /* LEANLoginManager.m */; };
+		3585A853146FC0E440C99087 /* LEANJsCustomCodeExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = D7DB08F2419FBBAAA457663F /* LEANJsCustomCodeExecutor.m */; };
+		38DD0CE639B570C50458FDEA /* LEANRegexRulesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A731591762CBE96A9BFA078 /* LEANRegexRulesManager.m */; };
+		39B5FA2247972AE8D139FD6B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E22AD90F9E19B57CE8125F /* Localizable.strings */; };
+		3AE3C0627EA8127EA81BF79E /* LEANRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4689D918B552BD3E07E0A34A /* LEANRootViewController.m */; };
+		3E2041330180076DB30440C2 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DBEDFA767B733757E8DBC4 /* RECommonFunctions.m */; };
+		45524FDC706DDC4DD58BD160 /* LEANPDFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F855BA39A2BA79CBA938637 /* LEANPDFManager.m */; };
+		45B846294716900182EF5D09 /* MenuGroupNoIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF75B55B2C9F466C1275D1B1 /* MenuGroupNoIcon.xib */; };
+		465C26D4CE14E394FA4F3F5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 896DE3ACCA42C4897A9FA61F /* CoreGraphics.framework */; };
+		46617C9487B650A1C199FBF6 /* LaunchScreenNoNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4C5EF9AFF2D21A6361FADC /* LaunchScreenNoNav.storyboard */; };
+		47F9B510FF9017ADD6AB8202 /* CustomMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889FF51CE4BF5CF69ED6BAA3 /* CustomMenu.swift */; };
+		4ECD758ACB6AC6CCCE9B0B33 /* GNBackgroundAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 4642C16FEC91ACEB4CCEB649 /* GNBackgroundAudio.m */; };
+		56174DEABEDE4369E969E433 /* LEANLaunchScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B38E4671F7FF61D543840A5F /* LEANLaunchScreenManager.m */; };
+		571A9892E73493119BDAC992 /* appbeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5515E5F6FAD0780279754501 /* appbeep.wav */; };
+		67494FACE30A5AE498A164D5 /* GNLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0247E47D05869E60A10F8F67 /* GNLogManager.m */; };
+		6A2F0D6B7A6D7FFF8BA5942E /* ZipArchive in Frameworks */ = {isa = PBXBuildFile; productRef = B0F596D3DC860F0D02AE80E2 /* ZipArchive */; };
+		6EA04C580A39EFBA38AB8A6F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019567C3741B21A51CB6FF90 /* SystemConfiguration.framework */; };
+		70073C17D6BEFEB2BE742A73 /* customCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = 869288663C0EF25654DA68E5 /* customCSS.css */; };
+		70D6C8765C097AE37B09E450 /* custom-icons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFA4E3C195DF313EB92E6551 /* custom-icons.ttf */; };
+		711C0F5876CA96BBF80360E9 /* LEANActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 532D9161251E1AFCDE764059 /* LEANActionManager.m */; };
+		78FBECD22BB7BEE74511F5DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6144BBC9BAA7BD3A4827F355 /* Foundation.framework */; };
+		7A482B8040E9BAF376144066 /* MenuChildIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D35BCAA1E4497998B80ADC3 /* MenuChildIcon.xib */; };
+		7A5A5112A3BD6262AAFBFE42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777C434AFE4C71BE0E3B3CF3 /* Main.storyboard */; };
+		7EDB1D1C6FB0A91C20920804 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFDC5CA27A02550B9A30343 /* MessageUI.framework */; };
+		7FCA756B175EEA846358E0BD /* ContextMenuHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4759A3EDDB517216B2AA7A /* ContextMenuHandler.swift */; };
+		80AEB2D4E4329DFCA98DB839 /* NSURL+LEANUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F7612F03981303D703BA6 /* NSURL+LEANUtilities.m */; };
+		8119A46ADAA04BC0B16B5182 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F500C22DB4D7C21D5B158538 /* PrivacyInfo.xcprivacy */; };
+		83F347E04DA4FDDA931651AE /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308D95956EB3BA05FE2507 /* UIApplication+Extensions.swift */; };
+		84A93E63578DF963D97BB820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B394F2A86B436464AEFBAE /* main.m */; };
+		8833C1BFF78248AF148D065B /* TuistBundle+Gemini.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126820E45FBA3180E705D2A /* TuistBundle+Gemini.swift */; };
+		89FFE4A23DD83EE9B83E22BB /* iosHeaderImage in Resources */ = {isa = PBXBuildFile; fileRef = F2F221C5B3D63EEC63A26897 /* iosHeaderImage */; };
+		8A9F45ABEE5FC478DF621F0B /* customJS.js in Resources */ = {isa = PBXBuildFile; fileRef = EC7968553793CA2006BB3F9F /* customJS.js */; };
+		8E257A77B64652F20A3FE772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF79088376A089DBCC007F1 /* Images.xcassets */; };
+		9309FEDD46234C1F61343D20 /* LEANUrlCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8FBA0413D30F56E251E6C0 /* LEANUrlCache.m */; };
+		949B2053FA1262115FE2F609 /* SidebarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94905606F416163D26159488 /* SidebarHeaderView.xib */; };
+		94F89DDEB30E369979B5D676 /* TuistFonts+Gemini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4729D4014E61EE312E88AA44 /* TuistFonts+Gemini.swift */; };
+		981863ABE70F5CB0E4CD7BC0 /* MedianEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A53F41A5EAA02118C9C4895 /* MedianEventsManager.m */; };
+		9A781C4120A28AD5403FEB93 /* offline.html in Resources */ = {isa = PBXBuildFile; fileRef = 9A0A3AFF292557EAE8599E8A /* offline.html */; };
+		9ACA4492A528C40BF34DA6B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168E72BE061296FACB2B1A27 /* UIKit.framework */; };
+		9B94B76661A0F54BFE93C872 /* TuistAssets+Gemini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30760E03DCC02C8FE3EFB5C2 /* TuistAssets+Gemini.swift */; };
+		9C1ECABD14BFDC9E945C67C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCB6FB44531A906A79152AA /* QuartzCore.framework */; };
+		9EA69547E255BFED14DA28B1 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F970D53DD434277817CE629 /* REFrostedViewController.m */; };
+		A25963B59F9959B2D818199E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E64483DB057D6F7E00E14847 /* Settings.bundle */; };
+		A391F42C0BB5DB71A98BC732 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE23F84EF11FC67ECB2EB51E /* AppTrackingTransparency.framework */; };
+		A7419D7818C5AFE5B6B1FCDB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58CFC30882785FD1FBA55A3 /* CFNetwork.framework */; };
+		AA4D9628EF998E8978A22348 /* LEANDocumentSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C77C6016A862F41AB6C0F9 /* LEANDocumentSharer.m */; };
+		AAF0ABA4AB8916EF0AB4C207 /* LaunchScreenNav.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67ECFC879A7BDE6BD13E8981 /* LaunchScreenNav.storyboard */; };
+		ADB10FDA5C93221ECE9B03A7 /* iosCustomJS.js in Resources */ = {isa = PBXBuildFile; fileRef = DA17D22E4326EF79C3EA03DB /* iosCustomJS.js */; };
+		B057E327DE9CEB25DE76EB5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5A65166370FC64FCE0F038C /* InfoPlist.strings */; };
+		B5738584233F8B85FDDC5379 /* TuistPlists+Gemini.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F70C8A6D2C54AA2957A936 /* TuistPlists+Gemini.swift */; };
+		B7C838168116BBAA00B6AB31 /* LEANMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 976D8D005E87A175E016E819 /* LEANMenuViewController.m */; };
+		B9E0C1A84B2423396F987022 /* LEANWindowsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E0AAE5CDDCA385643E4B5FC /* LEANWindowsManager.m */; };
+		BC96A8536A52882240911C4A /* LEANProfilePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C41D47712091C5FF5D6266 /* LEANProfilePicker.m */; };
+		BFD2641A4EE5AB3211B936BE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4961909EEA2D4FE75619E1 /* Reachability.m */; };
+		C076916FF5A28103A171CA7F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36015872B7E4DBB446054BEC /* Social.framework */; };
+		C18A88E94432E311359CA95B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 824D79F11B31668490A381BE /* AudioToolbox.framework */; };
+		C454623383940CFF4ADDE555 /* LiquidTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3BCE25B809D5CB32D44355 /* LiquidTitleView.swift */; };
+		C508230546654B45A3D4EE8D /* MenuGroupIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6078DCA262528CB89915D808 /* MenuGroupIcon.xib */; };
+		C77CF03B3A24AFF8DD2C4008 /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56988A36F48C3B41E640E47B /* MediaAccessibility.framework */; };
+		C8EC29681980C02B44138148 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B43F48FA4FBB6CF7E6EF031 /* GTMNSString+HTML.m */; };
+		CA1B136F8A02EE4C691FB63F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9319BF38A0CBC6F55D3462 /* CoreText.framework */; };
+		CC2F835A702F4B37E8F39216 /* GNSwiftUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EB293BABA188FEBEDB1A8A /* GNSwiftUtilities.swift */; };
+		CDA0C1C9D32E08B76FC33839 /* LEANUrlInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B57A823FD1BE815571B911 /* LEANUrlInspector.m */; };
+		CEA28B30469484F09CE0EDC3 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104EDB5C3026A5C228B80F55 /* UIImage+REFrostedViewController.m */; };
+		CECE6861717D806BD9C20EE4 /* iosCustomCSS.css in Resources */ = {isa = PBXBuildFile; fileRef = C66692A08AAC0A838DF7A646 /* iosCustomCSS.css */; };
+		CF1F576AE7C732694DE5DEF7 /* LEANTabManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F95566099E5B8E5A17A5AD /* LEANTabManager.m */; };
+		D46CD85F676500FA17E6497D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DCDCFF50DEA689F04203C8 /* Accounts.framework */; };
+		D93BAA5651CDAEDF7534B165 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11CA2BA85BD9BC029310C5 /* UIView+REFrostedViewController.m */; };
+		DDC8C8998CC13C9949009EBB /* GoNativeCore in Frameworks */ = {isa = PBXBuildFile; productRef = 04523C5F335B2E64C3BB15FC /* GoNativeCore */; };
+		E11F85171786D6EB59490220 /* LEANIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CA92EB055F898A28B61DBA /* LEANIcons.swift */; };
+		E337320EC5AEDBB96FA4D22A /* GNFileWriterSharer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4E3D1199760AA4C980811B /* GNFileWriterSharer.m */; };
+		E4E5E563BBAE1A83CB5A76EE /* GNConfigPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1524A01056B0193B9078A3 /* GNConfigPreferences.m */; };
+		E873741E8861DFEA854BA43E /* LEANNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A14F7FA65392E24F180CCC /* LEANNavigationController.m */; };
+		E8E89F02ABB3D7F6E0A131EF /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3617F13FB260882F98D1CB9D /* REFrostedContainerViewController.m */; };
+		E94D61FAA40564A1711AA395 /* custom-icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A107E66B84AA7C52149E9F6 /* custom-icons.json */; };
+		EDA8D43EE83A2A73708B8F5C /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A327B5B3B3F40A8C17C8DD65 /* UIViewController+REFrostedViewController.m */; };
+		EFCA10205E6770BFA0EC4E7B /* LEANWebViewPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B882E4CE9CC4DC373FF881B /* LEANWebViewPool.m */; };
+		F93C95DC3D023647590B502C /* LEANInstallation.m in Sources */ = {isa = PBXBuildFile; fileRef = AE14C39C43B2183B63460514 /* LEANInstallation.m */; };
+		F96032084C01BECBD721B147 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CBDA29CACAD38AF9D48151FA /* GoogleService-Info.plist */; };
+		FB7614DB99E21C23FF30B3A4 /* MenuChildNoIcon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C15991647E32B26C6F6A8E1 /* MenuChildNoIcon.xib */; };
+		FD987C2CEA9483049AD45732 /* GNRegistrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 319154C5FEC3DFC76A205752 /* GNRegistrationManager.m */; };
+		FEE268BE82F0A6A8CC664B80 /* LEANWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE09154C56210A1307351B /* LEANWebViewController.m */; };
+		FEEFE26290295DB3D18CEAB8 /* TuistStrings+Gemini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E576325617B1E86A1D7DA0F /* TuistStrings+Gemini.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3F1C0EB261086EAA09C1FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C564BA755F7B6B3C21B750 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B6DF18640287B4D9EEB3242;
+			remoteInfo = Gemini;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		115DE9A242368C2379EFEAB2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EBBCC1A20C139E601CC5747 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		019567C3741B21A51CB6FF90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0247E47D05869E60A10F8F67 /* GNLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNLogManager.m; sourceTree = "<group>"; };
+		040F7612F03981303D703BA6 /* NSURL+LEANUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LEANUtilities.m"; sourceTree = "<group>"; };
+		086D82FDDEFCD03210A1D5B8 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0AE54E43F1232FBD4A6153AB /* WindowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowsController.swift; sourceTree = "<group>"; };
+		0D35BCAA1E4497998B80ADC3 /* MenuChildIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuChildIcon.xib; sourceTree = "<group>"; };
+		0FB66E79F8064EF7C3189896 /* BlobDownloader.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BlobDownloader.js; sourceTree = "<group>"; };
+		104EDB5C3026A5C228B80F55 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		168E72BE061296FACB2B1A27 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		171E0A24BE083189F6B7E3BD /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		19B9510C5E658CABA1A68B27 /* Project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Project.entitlements; sourceTree = "<group>"; };
+		1D14C73E86F7F557FFAC9A5C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1E0AAE5CDDCA385643E4B5FC /* LEANWindowsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWindowsManager.m; sourceTree = "<group>"; };
+		22F95566099E5B8E5A17A5AD /* LEANTabManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANTabManager.m; sourceTree = "<group>"; };
+		25CA92EB055F898A28B61DBA /* LEANIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEANIcons.swift; sourceTree = "<group>"; };
+		270803A6A973CFC512CA5125 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A107E66B84AA7C52149E9F6 /* custom-icons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "custom-icons.json"; sourceTree = "<group>"; };
+		2A8FBA0413D30F56E251E6C0 /* LEANUrlCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUrlCache.m; sourceTree = "<group>"; };
+		2AFDE62B2AC52713C3BC977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2DA49E878744C9F513E0EBFF /* nn-NO */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "nn-NO"; path = "nn-NO.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2FEB75E83F168037C66CEE42 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		30760E03DCC02C8FE3EFB5C2 /* TuistAssets+Gemini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+Gemini.swift"; sourceTree = "<group>"; };
+		319154C5FEC3DFC76A205752 /* GNRegistrationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNRegistrationManager.m; sourceTree = "<group>"; };
+		33EB293BABA188FEBEDB1A8A /* GNSwiftUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNSwiftUtilities.swift; sourceTree = "<group>"; };
+		34C77C6016A862F41AB6C0F9 /* LEANDocumentSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANDocumentSharer.m; sourceTree = "<group>"; };
+		36015872B7E4DBB446054BEC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Social.framework; sourceTree = DEVELOPER_DIR; };
+		3617F13FB260882F98D1CB9D /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		36F991BEE421B7CFE185C46F /* LEANUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUtilities.m; sourceTree = "<group>"; };
+		39E6A96E3430035406357527 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A53F41A5EAA02118C9C4895 /* MedianEventsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedianEventsManager.m; sourceTree = "<group>"; };
+		3A731591762CBE96A9BFA078 /* LEANRegexRulesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANRegexRulesManager.m; sourceTree = "<group>"; };
+		3B43F48FA4FBB6CF7E6EF031 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		4642C16FEC91ACEB4CCEB649 /* GNBackgroundAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBackgroundAudio.m; sourceTree = "<group>"; };
+		4689D918B552BD3E07E0A34A /* LEANRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANRootViewController.m; sourceTree = "<group>"; };
+		4729D4014E61EE312E88AA44 /* TuistFonts+Gemini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistFonts+Gemini.swift"; sourceTree = "<group>"; };
+		47A14F7FA65392E24F180CCC /* LEANNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANNavigationController.m; sourceTree = "<group>"; };
+		4A7DC2F87AB5A45C2E05D627 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4B3BCE25B809D5CB32D44355 /* LiquidTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidTitleView.swift; sourceTree = "<group>"; };
+		519FBC486FBFEF0058EFE4CB /* appConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appConfig.json; sourceTree = "<group>"; };
+		532D9161251E1AFCDE764059 /* LEANActionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANActionManager.m; sourceTree = "<group>"; };
+		53720C07687359F089D2F374 /* MedianIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MedianIOSTests-Info.plist"; sourceTree = "<group>"; };
+		5515E5F6FAD0780279754501 /* appbeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appbeep.wav; sourceTree = "<group>"; };
+		56988A36F48C3B41E640E47B /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MediaAccessibility.framework; sourceTree = DEVELOPER_DIR; };
+		5B4961909EEA2D4FE75619E1 /* Reachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5C1524A01056B0193B9078A3 /* GNConfigPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNConfigPreferences.m; sourceTree = "<group>"; };
+		5E576325617B1E86A1D7DA0F /* TuistStrings+Gemini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistStrings+Gemini.swift"; sourceTree = "<group>"; };
+		5F855BA39A2BA79CBA938637 /* LEANPDFManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANPDFManager.m; sourceTree = "<group>"; };
+		5F970D53DD434277817CE629 /* REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		60307C63D1C9A1CEF301D96D /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6078DCA262528CB89915D808 /* MenuGroupIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuGroupIcon.xib; sourceTree = "<group>"; };
+		6144BBC9BAA7BD3A4827F355 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		63093CD2DF7E1132193202F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		631F2FF32726142D5B3D8E49 /* LEANConfigUpdater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANConfigUpdater.m; sourceTree = "<group>"; };
+		67253EC8A1E643324C8E4281 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		67ECFC879A7BDE6BD13E8981 /* LaunchScreenNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenNav.storyboard; sourceTree = "<group>"; };
+		75818AA7C2E2978DBF31D8CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		75D3FD8A6559320107B86396 /* LEANWebViewIntercept.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewIntercept.m; sourceTree = "<group>"; };
+		76B3EE0910F8BA25A461D14F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		77BA11C8885F4287BFADE55D /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		78B57A823FD1BE815571B911 /* LEANUrlInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANUrlInspector.m; sourceTree = "<group>"; };
+		7931015558ED63C1A0B70FCA /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B17B00C5AF119763508BB97 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B882E4CE9CC4DC373FF881B /* LEANWebViewPool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewPool.m; sourceTree = "<group>"; };
+		7FFE09154C56210A1307351B /* LEANWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANWebViewController.m; sourceTree = "<group>"; };
+		80E0F882DC21BF93A873CC51 /* GoNativeJSBridgeLibrary.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = GoNativeJSBridgeLibrary.js; sourceTree = "<group>"; };
+		824D79F11B31668490A381BE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		869288663C0EF25654DA68E5 /* customCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = customCSS.css; sourceTree = "<group>"; };
+		889FF51CE4BF5CF69ED6BAA3 /* CustomMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenu.swift; sourceTree = "<group>"; };
+		8920AD733EB912E9DF388EEF /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		896DE3ACCA42C4897A9FA61F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		89DBEDFA767B733757E8DBC4 /* RECommonFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		8A70639EACF094E8BEE9B016 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		92B1AFF88E9BA9D10BC0F077 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		93AE834C5F294F67657D0232 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		93CD950AEBD00E181ABF3CBB /* LEANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANAppDelegate.m; sourceTree = "<group>"; };
+		94905606F416163D26159488 /* SidebarHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SidebarHeaderView.xib; sourceTree = "<group>"; };
+		95597765483186A1426FE4BB /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96B394F2A86B436464AEFBAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		976D8D005E87A175E016E819 /* LEANMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANMenuViewController.m; sourceTree = "<group>"; };
+		990686790D0F87C3BC1C4BCF /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9A0A3AFF292557EAE8599E8A /* offline.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = offline.html; sourceTree = "<group>"; };
+		9C15991647E32B26C6F6A8E1 /* MenuChildNoIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuChildNoIcon.xib; sourceTree = "<group>"; };
+		A0F70C8A6D2C54AA2957A936 /* TuistPlists+Gemini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistPlists+Gemini.swift"; sourceTree = "<group>"; };
+		A327B5B3B3F40A8C17C8DD65 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
+		A3308D95956EB3BA05FE2507 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		A360AA476B65B6EDEC168777 /* localCache.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = localCache.zip; sourceTree = "<group>"; };
+		A389D6C38DD8D5026F2428C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		ABD6E420C275A6D41530D2BF /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE14C39C43B2183B63460514 /* LEANInstallation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANInstallation.m; sourceTree = "<group>"; };
+		B38E4671F7FF61D543840A5F /* LEANLaunchScreenManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLaunchScreenManager.m; sourceTree = "<group>"; };
+		B5179DD692D2CC2369B00778 /* LEANLoadingSpinnerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoadingSpinnerManager.m; sourceTree = "<group>"; };
+		B8EEF084669217DA9A282A2E /* LeanIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeanIOSTests.m; sourceTree = "<group>"; };
+		B96384DE083D19A2A375078D /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BAFA6A8B77C333F4A4CA4811 /* WebViewViewportManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewportManager.swift; sourceTree = "<group>"; };
+		C159D908A21EC1404F901551 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C235B20F5AE45AFCD743C784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C406FB40790EA2AE12F94F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C66692A08AAC0A838DF7A646 /* iosCustomCSS.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = iosCustomCSS.css; sourceTree = "<group>"; };
+		C7D29DF94B113378C770E961 /* GNCustomHeaders.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNCustomHeaders.m; sourceTree = "<group>"; };
+		C85E8D8FE0096DA2A0533396 /* LEANLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANLoginManager.m; sourceTree = "<group>"; };
+		CBDA29CACAD38AF9D48151FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD11CA2BA85BD9BC029310C5 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		CD4759A3EDDB517216B2AA7A /* ContextMenuHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuHandler.swift; sourceTree = "<group>"; };
+		CD4C5EF9AFF2D21A6361FADC /* LaunchScreenNoNav.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreenNoNav.storyboard; sourceTree = "<group>"; };
+		D25F8A01FFF2EB1842E6B55B /* gd */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gd; path = gd.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D419B9710A82F529869D1F79 /* LEANKeyboardManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANKeyboardManager.m; sourceTree = "<group>"; };
+		D7DB08F2419FBBAAA457663F /* LEANJsCustomCodeExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANJsCustomCodeExecutor.m; sourceTree = "<group>"; };
+		D9531B2E55E403AA5A4E4E5A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA17D22E4326EF79C3EA03DB /* iosCustomJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = iosCustomJS.js; sourceTree = "<group>"; };
+		DDD3FC6DB8109E04F3D2A3FC /* LEANToolbarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANToolbarManager.m; sourceTree = "<group>"; };
+		DF762350D1057D8764FA0E06 /* AppIcon */ = {isa = PBXFileReference; path = AppIcon; sourceTree = "<group>"; };
+		E126820E45FBA3180E705D2A /* TuistBundle+Gemini.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Gemini.swift"; sourceTree = "<group>"; };
+		E12E0DBF11B1C92BCC895271 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		E243301CD102708C6A491A01 /* Gemini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gemini.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58CFC30882785FD1FBA55A3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		E6035C3EC9395DDA10815480 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E64483DB057D6F7E00E14847 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = Settings.bundle; sourceTree = "<group>"; };
+		E9D0240DCD5C38219D1862D7 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EC7968553793CA2006BB3F9F /* customJS.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = customJS.js; sourceTree = "<group>"; };
+		EE4E3D1199760AA4C980811B /* GNFileWriterSharer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNFileWriterSharer.m; sourceTree = "<group>"; };
+		EF06768420FA5EB67FE5131B /* MedianIOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MedianIOS-Info.plist"; sourceTree = "<group>"; };
+		EF75B55B2C9F466C1275D1B1 /* MenuGroupNoIcon.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuGroupNoIcon.xib; sourceTree = "<group>"; };
+		F1DCDCFF50DEA689F04203C8 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Accounts.framework; sourceTree = DEVELOPER_DIR; };
+		F1FF141AEDDB7960BE21D02C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2F221C5B3D63EEC63A26897 /* iosHeaderImage */ = {isa = PBXFileReference; path = iosHeaderImage; sourceTree = "<group>"; };
+		F4C41D47712091C5FF5D6266 /* LEANProfilePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEANProfilePicker.m; sourceTree = "<group>"; };
+		F500C22DB4D7C21D5B158538 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		FB9319BF38A0CBC6F55D3462 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		FBF79088376A089DBCC007F1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FCCB6FB44531A906A79152AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FDDBBDDBD36E787B4738DB3D /* GNJSBridgeInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNJSBridgeInterface.m; sourceTree = "<group>"; };
+		FE23F84EF11FC67ECB2EB51E /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = DEVELOPER_DIR; };
+		FEE98C24702AD65F5109A47F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FEFDC5CA27A02550B9A30343 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		FF75C4BB5CCE900F2D4361D4 /* GeminiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeminiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA4E3C195DF313EB92E6551 /* custom-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "custom-icons.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AEB1BD47F688A46513F971E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46CD85F676500FA17E6497D /* Accounts.framework in Frameworks */,
+				A391F42C0BB5DB71A98BC732 /* AppTrackingTransparency.framework in Frameworks */,
+				C18A88E94432E311359CA95B /* AudioToolbox.framework in Frameworks */,
+				A7419D7818C5AFE5B6B1FCDB /* CFNetwork.framework in Frameworks */,
+				465C26D4CE14E394FA4F3F5C /* CoreGraphics.framework in Frameworks */,
+				1DEF569C99148F3053DE3E4A /* CoreLocation.framework in Frameworks */,
+				CA1B136F8A02EE4C691FB63F /* CoreText.framework in Frameworks */,
+				78FBECD22BB7BEE74511F5DF /* Foundation.framework in Frameworks */,
+				C77CF03B3A24AFF8DD2C4008 /* MediaAccessibility.framework in Frameworks */,
+				7EDB1D1C6FB0A91C20920804 /* MessageUI.framework in Frameworks */,
+				9C1ECABD14BFDC9E945C67C9 /* QuartzCore.framework in Frameworks */,
+				2C24B82444756435CB362D0C /* Security.framework in Frameworks */,
+				C076916FF5A28103A171CA7F /* Social.framework in Frameworks */,
+				6EA04C580A39EFBA38AB8A6F /* SystemConfiguration.framework in Frameworks */,
+				9ACA4492A528C40BF34DA6B1 /* UIKit.framework in Frameworks */,
+				DDC8C8998CC13C9949009EBB /* GoNativeCore in Frameworks */,
+				1474956D4A7CD01A3CB454B6 /* MedianIcons in Frameworks */,
+				6A2F0D6B7A6D7FFF8BA5942E /* ZipArchive in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C45F8D9E127C9C40E9B46F2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5B3970C19AD609ADBCEF1 = {
+			isa = PBXGroup;
+			children = (
+				DC89B52182C8085B8089736A /* Products */,
+				4C2E7757A5DE6342EA287C3A /* Project */,
+				2A60ED5323BFA0B06584281C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A60ED5323BFA0B06584281C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1DCDCFF50DEA689F04203C8 /* Accounts.framework */,
+				FE23F84EF11FC67ECB2EB51E /* AppTrackingTransparency.framework */,
+				824D79F11B31668490A381BE /* AudioToolbox.framework */,
+				E58CFC30882785FD1FBA55A3 /* CFNetwork.framework */,
+				896DE3ACCA42C4897A9FA61F /* CoreGraphics.framework */,
+				E12E0DBF11B1C92BCC895271 /* CoreLocation.framework */,
+				FB9319BF38A0CBC6F55D3462 /* CoreText.framework */,
+				6144BBC9BAA7BD3A4827F355 /* Foundation.framework */,
+				56988A36F48C3B41E640E47B /* MediaAccessibility.framework */,
+				FEFDC5CA27A02550B9A30343 /* MessageUI.framework */,
+				FCCB6FB44531A906A79152AA /* QuartzCore.framework */,
+				75818AA7C2E2978DBF31D8CD /* Security.framework */,
+				36015872B7E4DBB446054BEC /* Social.framework */,
+				019567C3741B21A51CB6FF90 /* SystemConfiguration.framework */,
+				168E72BE061296FACB2B1A27 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C2E7757A5DE6342EA287C3A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				8592B51C8366EFC50008F928 /* Derived */,
+				B1B5C730AAE4B6F46AB3C3A3 /* LeanIOS */,
+				CC9FDB8F669E1667FF9E8814 /* LeanIOSTests */,
+				CBDA29CACAD38AF9D48151FA /* GoogleService-Info.plist */,
+				19B9510C5E658CABA1A68B27 /* Project.entitlements */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		5DBECBFCED17B593B1C53031 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				30760E03DCC02C8FE3EFB5C2 /* TuistAssets+Gemini.swift */,
+				E126820E45FBA3180E705D2A /* TuistBundle+Gemini.swift */,
+				4729D4014E61EE312E88AA44 /* TuistFonts+Gemini.swift */,
+				A0F70C8A6D2C54AA2957A936 /* TuistPlists+Gemini.swift */,
+				5E576325617B1E86A1D7DA0F /* TuistStrings+Gemini.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8592B51C8366EFC50008F928 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				5DBECBFCED17B593B1C53031 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		B1B5C730AAE4B6F46AB3C3A3 /* LeanIOS */ = {
+			isa = PBXGroup;
+			children = (
+				C5A65166370FC64FCE0F038C /* InfoPlist.strings */,
+				F6E22AD90F9E19B57CE8125F /* Localizable.strings */,
+				777C434AFE4C71BE0E3B3CF3 /* Main.storyboard */,
+				E1B48B25CA312F7DE21DC6D2 /* REFrostedViewController */,
+				5515E5F6FAD0780279754501 /* appbeep.wav */,
+				519FBC486FBFEF0058EFE4CB /* appConfig.json */,
+				DF762350D1057D8764FA0E06 /* AppIcon */,
+				C406FB40790EA2AE12F94F8E /* Assets.xcassets */,
+				0FB66E79F8064EF7C3189896 /* BlobDownloader.js */,
+				CD4759A3EDDB517216B2AA7A /* ContextMenuHandler.swift */,
+				2A107E66B84AA7C52149E9F6 /* custom-icons.json */,
+				FFA4E3C195DF313EB92E6551 /* custom-icons.ttf */,
+				869288663C0EF25654DA68E5 /* customCSS.css */,
+				EC7968553793CA2006BB3F9F /* customJS.js */,
+				889FF51CE4BF5CF69ED6BAA3 /* CustomMenu.swift */,
+				4642C16FEC91ACEB4CCEB649 /* GNBackgroundAudio.m */,
+				5C1524A01056B0193B9078A3 /* GNConfigPreferences.m */,
+				C7D29DF94B113378C770E961 /* GNCustomHeaders.m */,
+				EE4E3D1199760AA4C980811B /* GNFileWriterSharer.m */,
+				FDDBBDDBD36E787B4738DB3D /* GNJSBridgeInterface.m */,
+				0247E47D05869E60A10F8F67 /* GNLogManager.m */,
+				319154C5FEC3DFC76A205752 /* GNRegistrationManager.m */,
+				33EB293BABA188FEBEDB1A8A /* GNSwiftUtilities.swift */,
+				80E0F882DC21BF93A873CC51 /* GoNativeJSBridgeLibrary.js */,
+				3B43F48FA4FBB6CF7E6EF031 /* GTMNSString+HTML.m */,
+				FBF79088376A089DBCC007F1 /* Images.xcassets */,
+				C66692A08AAC0A838DF7A646 /* iosCustomCSS.css */,
+				DA17D22E4326EF79C3EA03DB /* iosCustomJS.js */,
+				F2F221C5B3D63EEC63A26897 /* iosHeaderImage */,
+				270803A6A973CFC512CA5125 /* LaunchScreen.storyboard */,
+				67ECFC879A7BDE6BD13E8981 /* LaunchScreenNav.storyboard */,
+				CD4C5EF9AFF2D21A6361FADC /* LaunchScreenNoNav.storyboard */,
+				532D9161251E1AFCDE764059 /* LEANActionManager.m */,
+				93CD950AEBD00E181ABF3CBB /* LEANAppDelegate.m */,
+				631F2FF32726142D5B3D8E49 /* LEANConfigUpdater.m */,
+				34C77C6016A862F41AB6C0F9 /* LEANDocumentSharer.m */,
+				25CA92EB055F898A28B61DBA /* LEANIcons.swift */,
+				AE14C39C43B2183B63460514 /* LEANInstallation.m */,
+				D7DB08F2419FBBAAA457663F /* LEANJsCustomCodeExecutor.m */,
+				D419B9710A82F529869D1F79 /* LEANKeyboardManager.m */,
+				B38E4671F7FF61D543840A5F /* LEANLaunchScreenManager.m */,
+				B5179DD692D2CC2369B00778 /* LEANLoadingSpinnerManager.m */,
+				C85E8D8FE0096DA2A0533396 /* LEANLoginManager.m */,
+				976D8D005E87A175E016E819 /* LEANMenuViewController.m */,
+				47A14F7FA65392E24F180CCC /* LEANNavigationController.m */,
+				5F855BA39A2BA79CBA938637 /* LEANPDFManager.m */,
+				F4C41D47712091C5FF5D6266 /* LEANProfilePicker.m */,
+				3A731591762CBE96A9BFA078 /* LEANRegexRulesManager.m */,
+				4689D918B552BD3E07E0A34A /* LEANRootViewController.m */,
+				22F95566099E5B8E5A17A5AD /* LEANTabManager.m */,
+				DDD3FC6DB8109E04F3D2A3FC /* LEANToolbarManager.m */,
+				2A8FBA0413D30F56E251E6C0 /* LEANUrlCache.m */,
+				78B57A823FD1BE815571B911 /* LEANUrlInspector.m */,
+				36F991BEE421B7CFE185C46F /* LEANUtilities.m */,
+				7FFE09154C56210A1307351B /* LEANWebViewController.m */,
+				75D3FD8A6559320107B86396 /* LEANWebViewIntercept.m */,
+				7B882E4CE9CC4DC373FF881B /* LEANWebViewPool.m */,
+				1E0AAE5CDDCA385643E4B5FC /* LEANWindowsManager.m */,
+				4B3BCE25B809D5CB32D44355 /* LiquidTitleView.swift */,
+				A360AA476B65B6EDEC168777 /* localCache.zip */,
+				96B394F2A86B436464AEFBAE /* main.m */,
+				3A53F41A5EAA02118C9C4895 /* MedianEventsManager.m */,
+				EF06768420FA5EB67FE5131B /* MedianIOS-Info.plist */,
+				0D35BCAA1E4497998B80ADC3 /* MenuChildIcon.xib */,
+				9C15991647E32B26C6F6A8E1 /* MenuChildNoIcon.xib */,
+				6078DCA262528CB89915D808 /* MenuGroupIcon.xib */,
+				EF75B55B2C9F466C1275D1B1 /* MenuGroupNoIcon.xib */,
+				040F7612F03981303D703BA6 /* NSURL+LEANUtilities.m */,
+				9A0A3AFF292557EAE8599E8A /* offline.html */,
+				F500C22DB4D7C21D5B158538 /* PrivacyInfo.xcprivacy */,
+				5B4961909EEA2D4FE75619E1 /* Reachability.m */,
+				E64483DB057D6F7E00E14847 /* Settings.bundle */,
+				94905606F416163D26159488 /* SidebarHeaderView.xib */,
+				A3308D95956EB3BA05FE2507 /* UIApplication+Extensions.swift */,
+				BAFA6A8B77C333F4A4CA4811 /* WebViewViewportManager.swift */,
+				0AE54E43F1232FBD4A6153AB /* WindowsController.swift */,
+			);
+			path = LeanIOS;
+			sourceTree = "<group>";
+		};
+		CC9FDB8F669E1667FF9E8814 /* LeanIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8EEF084669217DA9A282A2E /* LeanIOSTests.m */,
+				53720C07687359F089D2F374 /* MedianIOSTests-Info.plist */,
+			);
+			path = LeanIOSTests;
+			sourceTree = "<group>";
+		};
+		DC89B52182C8085B8089736A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E243301CD102708C6A491A01 /* Gemini.app */,
+				FF75C4BB5CCE900F2D4361D4 /* GeminiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1B48B25CA312F7DE21DC6D2 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				89DBEDFA767B733757E8DBC4 /* RECommonFunctions.m */,
+				3617F13FB260882F98D1CB9D /* REFrostedContainerViewController.m */,
+				5F970D53DD434277817CE629 /* REFrostedViewController.m */,
+				104EDB5C3026A5C228B80F55 /* UIImage+REFrostedViewController.m */,
+				CD11CA2BA85BD9BC029310C5 /* UIView+REFrostedViewController.m */,
+				A327B5B3B3F40A8C17C8DD65 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CE1CD6CED40EF0548EA8105 /* GeminiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C61F76BB0D82471194BBEC2 /* Build configuration list for PBXNativeTarget "GeminiTests" */;
+			buildPhases = (
+				520E74ED9BB104E032BC6BAC /* Sources */,
+				1A8554CFC8938927ACAF4B2C /* Resources */,
+				C45F8D9E127C9C40E9B46F2E /* Frameworks */,
+				4EBBCC1A20C139E601CC5747 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E91ACFCEC8D5E66804ED8CEF /* PBXTargetDependency */,
+			);
+			name = GeminiTests;
+			packageProductDependencies = (
+			);
+			productName = GeminiTests;
+			productReference = FF75C4BB5CCE900F2D4361D4 /* GeminiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B6DF18640287B4D9EEB3242 /* Gemini */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D6DABDA0223F61F0966FDCB /* Build configuration list for PBXNativeTarget "Gemini" */;
+			buildPhases = (
+				3FBDF06D1D91E3A623D66B0F /* Sources */,
+				65DA2D35A1B6E0361C5B51F1 /* Resources */,
+				0AEB1BD47F688A46513F971E /* Frameworks */,
+				115DE9A242368C2379EFEAB2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gemini;
+			packageProductDependencies = (
+				04523C5F335B2E64C3BB15FC /* GoNativeCore */,
+				7B4CEAD71A493DCB634E702D /* MedianIcons */,
+				B0F596D3DC860F0D02AE80E2 /* ZipArchive */,
+			);
+			productName = Gemini;
+			productReference = E243301CD102708C6A491A01 /* Gemini.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C564BA755F7B6B3C21B750 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = GoNative.io;
+				TargetAttributes = {
+					5CE1CD6CED40EF0548EA8105 = {
+						TestTargetID = 7B6DF18640287B4D9EEB3242;
+					};
+				};
+			};
+			buildConfigurationList = 2192DF129D714AB9AA9F7939 /* Build configuration list for PBXProject "Gemini" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				en,
+				es,
+				"es-419",
+				et,
+				fa,
+				fi,
+				fr,
+				gd,
+				he,
+				hu,
+				it,
+				ja,
+				ko,
+				lt,
+				lv,
+				nl,
+				"nn-NO",
+				pt,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				tr,
+				uk,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 03C5B3970C19AD609ADBCEF1;
+			packageReferences = (
+				171D9AFCB7DB05C7C9BF7099 /* XCRemoteSwiftPackageReference "ZipArchive" */,
+				2FFCFB66C51EA0ED018F3F43 /* XCRemoteSwiftPackageReference "median.go-native-core" */,
+				AF013504FD056B942CA112B2 /* XCRemoteSwiftPackageReference "median.median-icons" */,
+			);
+			productRefGroup = DC89B52182C8085B8089736A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B6DF18640287B4D9EEB3242 /* Gemini */,
+				5CE1CD6CED40EF0548EA8105 /* GeminiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A8554CFC8938927ACAF4B2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DA2D35A1B6E0361C5B51F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96032084C01BECBD721B147 /* GoogleService-Info.plist in Resources */,
+				32B6CD254A14886FC24C4DCF /* AppIcon in Resources */,
+				2FC4E20EF5050918D37FDD0C /* Assets.xcassets in Resources */,
+				7A5A5112A3BD6262AAFBFE42 /* Main.storyboard in Resources */,
+				32B4E41BFCFDA4BE21148D41 /* BlobDownloader.js in Resources */,
+				01447C722BF9E18DFE01481C /* GoNativeJSBridgeLibrary.js in Resources */,
+				8E257A77B64652F20A3FE772 /* Images.xcassets in Resources */,
+				286A0C899A92415DC94D8585 /* LaunchScreen.storyboard in Resources */,
+				AAF0ABA4AB8916EF0AB4C207 /* LaunchScreenNav.storyboard in Resources */,
+				46617C9487B650A1C199FBF6 /* LaunchScreenNoNav.storyboard in Resources */,
+				7A482B8040E9BAF376144066 /* MenuChildIcon.xib in Resources */,
+				FB7614DB99E21C23FF30B3A4 /* MenuChildNoIcon.xib in Resources */,
+				C508230546654B45A3D4EE8D /* MenuGroupIcon.xib in Resources */,
+				45B846294716900182EF5D09 /* MenuGroupNoIcon.xib in Resources */,
+				8119A46ADAA04BC0B16B5182 /* PrivacyInfo.xcprivacy in Resources */,
+				A25963B59F9959B2D818199E /* Settings.bundle in Resources */,
+				949B2053FA1262115FE2F609 /* SidebarHeaderView.xib in Resources */,
+				11610EAC35D1EFC75F20060E /* appConfig.json in Resources */,
+				571A9892E73493119BDAC992 /* appbeep.wav in Resources */,
+				39B5FA2247972AE8D139FD6B /* Localizable.strings in Resources */,
+				E94D61FAA40564A1711AA395 /* custom-icons.json in Resources */,
+				70D6C8765C097AE37B09E450 /* custom-icons.ttf in Resources */,
+				70073C17D6BEFEB2BE742A73 /* customCSS.css in Resources */,
+				8A9F45ABEE5FC478DF621F0B /* customJS.js in Resources */,
+				B057E327DE9CEB25DE76EB5F /* InfoPlist.strings in Resources */,
+				CECE6861717D806BD9C20EE4 /* iosCustomCSS.css in Resources */,
+				ADB10FDA5C93221ECE9B03A7 /* iosCustomJS.js in Resources */,
+				89FFE4A23DD83EE9B83E22BB /* iosHeaderImage in Resources */,
+				051F923C74F909E227C663C9 /* localCache.zip in Resources */,
+				9A781C4120A28AD5403FEB93 /* offline.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FBDF06D1D91E3A623D66B0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B94B76661A0F54BFE93C872 /* TuistAssets+Gemini.swift in Sources */,
+				8833C1BFF78248AF148D065B /* TuistBundle+Gemini.swift in Sources */,
+				94F89DDEB30E369979B5D676 /* TuistFonts+Gemini.swift in Sources */,
+				B5738584233F8B85FDDC5379 /* TuistPlists+Gemini.swift in Sources */,
+				FEEFE26290295DB3D18CEAB8 /* TuistStrings+Gemini.swift in Sources */,
+				7FCA756B175EEA846358E0BD /* ContextMenuHandler.swift in Sources */,
+				47F9B510FF9017ADD6AB8202 /* CustomMenu.swift in Sources */,
+				4ECD758ACB6AC6CCCE9B0B33 /* GNBackgroundAudio.m in Sources */,
+				E4E5E563BBAE1A83CB5A76EE /* GNConfigPreferences.m in Sources */,
+				0C06366F0B9126B87DE05911 /* GNCustomHeaders.m in Sources */,
+				E337320EC5AEDBB96FA4D22A /* GNFileWriterSharer.m in Sources */,
+				27500BF5A0DB414B19F7A20A /* GNJSBridgeInterface.m in Sources */,
+				67494FACE30A5AE498A164D5 /* GNLogManager.m in Sources */,
+				FD987C2CEA9483049AD45732 /* GNRegistrationManager.m in Sources */,
+				CC2F835A702F4B37E8F39216 /* GNSwiftUtilities.swift in Sources */,
+				C8EC29681980C02B44138148 /* GTMNSString+HTML.m in Sources */,
+				711C0F5876CA96BBF80360E9 /* LEANActionManager.m in Sources */,
+				26948466B164CC84D491B823 /* LEANAppDelegate.m in Sources */,
+				1806C0338AD7501E39A87E43 /* LEANConfigUpdater.m in Sources */,
+				AA4D9628EF998E8978A22348 /* LEANDocumentSharer.m in Sources */,
+				E11F85171786D6EB59490220 /* LEANIcons.swift in Sources */,
+				F93C95DC3D023647590B502C /* LEANInstallation.m in Sources */,
+				3585A853146FC0E440C99087 /* LEANJsCustomCodeExecutor.m in Sources */,
+				0CA65E972A2EF950ADA6C539 /* LEANKeyboardManager.m in Sources */,
+				56174DEABEDE4369E969E433 /* LEANLaunchScreenManager.m in Sources */,
+				0BC19AF129606067F70F4EF8 /* LEANLoadingSpinnerManager.m in Sources */,
+				349EABF7FDCA865606001357 /* LEANLoginManager.m in Sources */,
+				B7C838168116BBAA00B6AB31 /* LEANMenuViewController.m in Sources */,
+				E873741E8861DFEA854BA43E /* LEANNavigationController.m in Sources */,
+				45524FDC706DDC4DD58BD160 /* LEANPDFManager.m in Sources */,
+				BC96A8536A52882240911C4A /* LEANProfilePicker.m in Sources */,
+				38DD0CE639B570C50458FDEA /* LEANRegexRulesManager.m in Sources */,
+				3AE3C0627EA8127EA81BF79E /* LEANRootViewController.m in Sources */,
+				CF1F576AE7C732694DE5DEF7 /* LEANTabManager.m in Sources */,
+				2896ECFA9FBF9443B7579F82 /* LEANToolbarManager.m in Sources */,
+				9309FEDD46234C1F61343D20 /* LEANUrlCache.m in Sources */,
+				CDA0C1C9D32E08B76FC33839 /* LEANUrlInspector.m in Sources */,
+				22E61857F90AD58EEA4E07E6 /* LEANUtilities.m in Sources */,
+				FEE268BE82F0A6A8CC664B80 /* LEANWebViewController.m in Sources */,
+				2FFAA880F782DB58E2D5F356 /* LEANWebViewIntercept.m in Sources */,
+				EFCA10205E6770BFA0EC4E7B /* LEANWebViewPool.m in Sources */,
+				B9E0C1A84B2423396F987022 /* LEANWindowsManager.m in Sources */,
+				C454623383940CFF4ADDE555 /* LiquidTitleView.swift in Sources */,
+				981863ABE70F5CB0E4CD7BC0 /* MedianEventsManager.m in Sources */,
+				80AEB2D4E4329DFCA98DB839 /* NSURL+LEANUtilities.m in Sources */,
+				3E2041330180076DB30440C2 /* RECommonFunctions.m in Sources */,
+				E8E89F02ABB3D7F6E0A131EF /* REFrostedContainerViewController.m in Sources */,
+				9EA69547E255BFED14DA28B1 /* REFrostedViewController.m in Sources */,
+				CEA28B30469484F09CE0EDC3 /* UIImage+REFrostedViewController.m in Sources */,
+				D93BAA5651CDAEDF7534B165 /* UIView+REFrostedViewController.m in Sources */,
+				EDA8D43EE83A2A73708B8F5C /* UIViewController+REFrostedViewController.m in Sources */,
+				BFD2641A4EE5AB3211B936BE /* Reachability.m in Sources */,
+				83F347E04DA4FDDA931651AE /* UIApplication+Extensions.swift in Sources */,
+				1F2556A822E89D7FDDF67214 /* WebViewViewportManager.swift in Sources */,
+				2041EAF80004C2796B452181 /* WindowsController.swift in Sources */,
+				84A93E63578DF963D97BB820 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		520E74ED9BB104E032BC6BAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A3759A8D54C51D66E0A77F /* LeanIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E91ACFCEC8D5E66804ED8CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gemini;
+			target = 7B6DF18640287B4D9EEB3242 /* Gemini */;
+			targetProxy = E3F1C0EB261086EAA09C1FD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		777C434AFE4C71BE0E3B3CF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C235B20F5AE45AFCD743C784 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5A65166370FC64FCE0F038C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63093CD2DF7E1132193202F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6E22AD90F9E19B57CE8125F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BA11C8885F4287BFADE55D /* ar */,
+				92B1AFF88E9BA9D10BC0F077 /* ca */,
+				E9D0240DCD5C38219D1862D7 /* cs */,
+				7B17B00C5AF119763508BB97 /* da */,
+				95597765483186A1426FE4BB /* de */,
+				2AFDE62B2AC52713C3BC977A /* en */,
+				67253EC8A1E643324C8E4281 /* es */,
+				C159D908A21EC1404F901551 /* es-419 */,
+				171E0A24BE083189F6B7E3BD /* et */,
+				ABD6E420C275A6D41530D2BF /* fa */,
+				8A70639EACF094E8BEE9B016 /* fi */,
+				1D14C73E86F7F557FFAC9A5C /* fr */,
+				D25F8A01FFF2EB1842E6B55B /* gd */,
+				FEE98C24702AD65F5109A47F /* he */,
+				7931015558ED63C1A0B70FCA /* hu */,
+				F1FF141AEDDB7960BE21D02C /* it */,
+				39E6A96E3430035406357527 /* ja */,
+				086D82FDDEFCD03210A1D5B8 /* ko */,
+				990686790D0F87C3BC1C4BCF /* lt */,
+				60307C63D1C9A1CEF301D96D /* lv */,
+				8920AD733EB912E9DF388EEF /* nl */,
+				2DA49E878744C9F513E0EBFF /* nn-NO */,
+				B96384DE083D19A2A375078D /* pt */,
+				2FEB75E83F168037C66CEE42 /* pt-BR */,
+				4A7DC2F87AB5A45C2E05D627 /* pt-PT */,
+				E6035C3EC9395DDA10815480 /* ru */,
+				D9531B2E55E403AA5A4E4E5A /* tr */,
+				76B3EE0910F8BA25A461D14F /* uk */,
+				A389D6C38DD8D5026F2428C2 /* zh-Hans */,
+				93AE834C5F294F67657D0232 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00B400582E86B68FF4FD5A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		280C1490D4F357B01C33FA7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_SETTINGS_APP_NAME = Gemini;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController";
+				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC $(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.wedrenw;
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeanIOS/GonativeIO-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "GonativeIO-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59A646A5B8E833B7AD11CCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController",
+				);
+				INFOPLIST_FILE = "LeanIOSTests/MedianIOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.wedrenwTests;
+				PRODUCT_NAME = GeminiTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemini.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gemini";
+				TEST_TARGET_NAME = Gemini;
+			};
+			name = Debug;
+		};
+		A0FF84688F355728090F0FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_SETTINGS_APP_NAME = Gemini;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Project.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_LANGUAGE = en;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController";
+				INFOPLIST_FILE = "LeanIOS/MedianIOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC $(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.wedrenw;
+				PRODUCT_NAME = Gemini;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "LeanIOS/GonativeIO-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "GonativeIO-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0B50D04068FACD6CDC5915A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeanIOS/MedianIOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(inherited) $(SRCROOT)/LeanIOS $(SRCROOT)/LeanIOS/REFrostedViewController",
+				);
+				INFOPLIST_FILE = "LeanIOSTests/MedianIOSTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.median.ios.wedrenwTests;
+				PRODUCT_NAME = GeminiTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gemini.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gemini";
+				TEST_TARGET_NAME = Gemini;
+			};
+			name = Release;
+		};
+		D9C2B4BFFD0D3AC7893BD2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2192DF129D714AB9AA9F7939 /* Build configuration list for PBXProject "Gemini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B400582E86B68FF4FD5A59 /* Debug */,
+				D9C2B4BFFD0D3AC7893BD2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D6DABDA0223F61F0966FDCB /* Build configuration list for PBXNativeTarget "Gemini" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280C1490D4F357B01C33FA7B /* Debug */,
+				A0FF84688F355728090F0FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C61F76BB0D82471194BBEC2 /* Build configuration list for PBXNativeTarget "GeminiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A646A5B8E833B7AD11CCBA /* Debug */,
+				C0B50D04068FACD6CDC5915A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		171D9AFCB7DB05C7C9BF7099 /* XCRemoteSwiftPackageReference "ZipArchive" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZipArchive/ZipArchive";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		2FFCFB66C51EA0ED018F3F43 /* XCRemoteSwiftPackageReference "median.go-native-core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "median.go-native-core";
+			requirement = {
+				kind = exactVersion;
+				version = 3.0.9;
+			};
+		};
+		AF013504FD056B942CA112B2 /* XCRemoteSwiftPackageReference "median.median-icons" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "median.median-icons";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04523C5F335B2E64C3BB15FC /* GoNativeCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GoNativeCore;
+		};
+		7B4CEAD71A493DCB634E702D /* MedianIcons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MedianIcons;
+		};
+		B0F596D3DC860F0D02AE80E2 /* ZipArchive */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZipArchive;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 39C564BA755F7B6B3C21B750 /* Project object */;
+}
