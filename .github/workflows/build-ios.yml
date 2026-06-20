@@ -24,7 +24,15 @@ jobs:
       - name: Install NPM Dependencies
         run: npm install
 
-      # 4. Compile and archive the iOS app using Xcode 16 (Bypassing Code Signing)
+      # 4. Create a non-interactive dummy keychain to satisfy background security checks
+      - name: Setup Non-Interactive Keychain
+        run: |
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security set-keychain-settings -lut 7200 build.keychain
+
+      # 5. Compile and archive the iOS app using Xcode 16 (Bypassing Code Signing & catching freezes)
       - name: Run xcodebuild Archive
         run: |
           xcodebuild archive \
@@ -35,9 +43,10 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            CODE_SIGN_ENTITLEMENTS=""
+            CODE_SIGN_ENTITLEMENTS="" \
+            OTHER_SWIFT_FLAGS="-Xfrontend -warn-long-expression-type-checking=300 -Xfrontend -warn-long-function-bodies=300"
 
-      # 5. Create Payload folder and dynamically move the app bundle to prevent path mismatch errors
+      # 6. Create Payload folder and dynamically move the app bundle to prevent path mismatch errors
       - name: Package into Unsigned IPA (Ipalify)
         run: |
           echo "Creating staging Payload directory..."
@@ -58,7 +67,7 @@ jobs:
           echo "Packaging Payload folder into Gemini_Web.ipa..."
           zip -r Gemini_Web.ipa Payload
 
-      # 6. Upload the generated .ipa installer package as a GitHub Actions workflow artifact
+      # 7. Upload the generated .ipa installer package as a GitHub Actions workflow artifact
       - name: Upload IPA Artifact
         uses: actions/upload-artifact@v4
         with:
