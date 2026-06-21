@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-        runs-on: macos-15
+    runs-on: macos-15
         
     steps:
       # 1. Checkout the source code from your repository
