@@ -6,23 +6,25 @@ on:
 jobs:
   build:
     runs-on: macos-15
+    env:
+      # These map to the Environment.* values read in Project.swift / Workspace.swift.
+      # Keep them as "Gemini" to match the workspace/scheme name used below.
+      TUIST_PROJECT_NAME: Gemini
+      TUIST_TARGET_NAME: Gemini
+      TUIST_APP_NAME: Gemini
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '24'
+      - name: Install Tuist
+        run: |
+          brew tap tuist/tuist
+          brew install --formula tuist
 
-      - name: Install NPM Dependencies
-        run: npm install
-
-      # NEW — check your package.json "scripts" block for the real name
-      # (often "build", sometimes "dist"). If there's no build step needed
-      # for your app, delete this.
-      - name: Build Frontend Assets
-        run: npm run build
+      - name: Generate Xcode Project with Tuist
+        run: |
+          tuist install
+          tuist generate --no-open
 
       - name: Setup Non-Interactive Keychain
         run: |
@@ -39,8 +41,6 @@ jobs:
             -archivePath Gemini.xcarchive \
             -configuration Release \
             -destination 'generic/platform=iOS' \
-            -skipPackagePluginValidation \
-            -skipMacroValidation \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
