@@ -7,8 +7,6 @@ jobs:
   build:
     runs-on: macos-15
     env:
-      # These map to the Environment.* values read in Project.swift / Workspace.swift.
-      # Keep them as "Gemini" to match the workspace/scheme name used below.
       TUIST_PROJECT_NAME: Gemini
       TUIST_TARGET_NAME: Gemini
       TUIST_APP_NAME: Gemini
@@ -19,7 +17,8 @@ jobs:
       - name: Install Tuist
         run: |
           brew tap tuist/tuist
-          brew install --formula tuist
+          brew install --formula tuist@4.191.6
+          brew link --overwrite tuist@4.191.6
 
       - name: Generate Xcode Project with Tuist
         run: |
