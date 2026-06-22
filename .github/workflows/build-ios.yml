@@ -44,9 +44,7 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGN_ENTITLEMENTS="" \
-            AD_HOC_CODE_SIGNING_ALLOWED=YES \
-            HEADER_SEARCH_PATHS="\$(OBJROOT)/GeneratedModuleMaps \$(BUILD_DIR)/Release-iphoneos/include" \
-            OTHER_SWIFT_FLAGS="-Xfrontend -warn-long-expression-type-checking=300 -Xfrontend -warn-long-function-bodies=300"
+            AD_HOC_CODE_SIGNING_ALLOWED=YES
 
       - name: Package into Unsigned IPA (Ipalify)
         run: |
